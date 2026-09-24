@@ -1,198 +1,199 @@
-# 🚀 Dashboard de Criptomonedas
+# 🚀 Cryptocurrency Dashboard
 
-Un dashboard moderno y completo para el seguimiento de criptomonedas, construido como parte del reto de aprendizaje de IA para programación de Platzi.
+A modern and comprehensive cryptocurrency tracking dashboard, built as part of Platzi's AI programming learning challenge.
 
-## 📋 Descripción del Proyecto
+## 📋 Project Description
 
-Este proyecto es un dashboard interactivo para el seguimiento y análisis de criptomonedas que incluye:
+This project is an interactive dashboard for cryptocurrency tracking and analysis that includes:
 
-- **Portfolio Overview**: Vista general del portafolio con métricas clave y gráficos en tiempo real
-- **Portfolio Management**: Gestión detallada de holdings y asignación de activos
-- **DeFi & Yield**: Seguimiento de pools de liquidez y rendimientos
-- **NFT Tracker**: Monitorización de colecciones NFT y precios floor
-- **On-Chain Data**: Análisis de actividad blockchain y estadísticas
-- **Gas Tracker**: Monitoreo de precios de gas y estimaciones
-- **Whale Alerts**: Alertas de movimientos grandes en el mercado
-- **Sistema de Alertas**: Notificaciones personalizables
+* **Portfolio Overview**: General portfolio overview with key metrics and real-time charts
+* **Portfolio Management**: Detailed holdings management and asset allocation
+* **DeFi & Yield**: Liquidity pool and yield tracking
+* **NFT Tracker**: NFT collection monitoring and floor prices
+* **On-Chain Data**: Blockchain activity analysis and statistics
+* **Gas Tracker**: Gas price monitoring and estimates
+* **Whale Alerts**: Alerts for large market movements
+* **Alert System**: Customizable notifications
 
-## 🛠️ Tecnologías Utilizadas
+## 🛠️ Technologies Used
 
-- **Frontend**: Next.js 16.1.6 con React 19.2.4
-- **Estilos**: Tailwind CSS 4.2.0
-- **Componentes**: Radix UI para componentes accesibles
-- **Gráficos**: Chart.js para visualizaciones interactivas
-- **Tipado**: TypeScript 5.7.3
-- **Gestión de Estado**: React Hooks y Context API
-- **Iconos**: Lucide React
-- **Formularios**: React Hook Form con Zod para validación
+* **Frontend**: Next.js 16.1.6 with React 19.2.4
+* **Styling**: Tailwind CSS 4.2.0
+* **Components**: Radix UI for accessible components
+* **Charts**: Chart.js for interactive visualizations
+* **Type Safety**: TypeScript 5.7.3
+* **State Management**: React Hooks and Context API
+* **Icons**: Lucide React
+* **Forms**: React Hook Form with Zod for validation
 
-## 🎯 Características Principales
+## 🎯 Main Features
 
 ### 💰 Portfolio Management
-- Seguimiento en tiempo real del valor del portafolio
-- Visualización de holdings con cambios porcentuales
-- Gráficos de rendimiento histórico
-- Análisis de asignación de activos
 
-### 📊 Análisis Avanzado
-- Gráficos interactivos con múltiples períodos
-- Estadísticas de red y métricas de mercado
-- Mapa de calor de actividad blockchain
-- Análisis de contratos inteligentes más utilizados
+* Real-time portfolio value tracking
+* Holdings visualization with percentage changes
+* Historical performance charts
+* Asset allocation analysis
 
-### 🔔 Sistema de Alertas Inteligentes
-- Alertas de precio personalizables
-- Notificaciones de gas económico
-- Detección de movimientos de ballenas (whales)
-- Alertas de portafolio y DeFi
+### 📊 Advanced Analytics
 
-### 🎨 Diseño Moderno
-- Interfaz oscura elegante con gradientes
-- Animaciones suaves y transiciones fluidas
-- Diseño responsive para todos los dispositivos
-- Tema personalizable con modo oscuro/claro
+* Interactive charts with multiple time periods
+* Network statistics and market metrics
+* Blockchain activity heatmap
+* Analysis of the most frequently used smart contracts
 
-## 🚀 Cómo Ejecutar el Proyecto
+### 🔔 Smart Alert System
 
-### Prerrequisitos
-- Node.js (versión 18 o superior)
-- npm, yarn o pnpm
+* Customizable price alerts
+* Low gas price notifications
+* Whale movement detection
+* Portfolio and DeFi alerts
 
-### Instalación
+### 🎨 Modern Design
 
-1. Clona el repositorio:
+* Elegant dark interface with gradients
+* Smooth animations and fluid transitions
+* Responsive design for all devices
+* Customizable theme with dark/light mode
+
+## 🚀 How to Run the Project
+
+### Prerequisites
+
+* Node.js (version 18 or higher)
+* npm, yarn, or pnpm
+
+### Installation
+
+1. Clone the repository:
+
 ```bash
-git clone https://github.com/tu-usuario/dashboard-criptomonedas.git
-cd dashboard-criptomonedas
+git clone <your-repo-url>
+cd crypto-dashboard
 ```
 
-2. Instala las dependencias:
+2. Install dependencies:
+
 ```bash
 npm install
-# o
+# or
 yarn install
-# o
+# or
 pnpm install
 ```
 
-3. Ejecuta el servidor de desarrollo:
+3. Start the development server:
+
 ```bash
 npm run dev
-# o
+# or
 yarn dev
-# o
+# or
 pnpm dev
 ```
 
-4. Abre [http://localhost:3000](http://localhost:3000) en tu navegador.
+4. Open `http://localhost:3000` in your browser.
 
-### Build para Producción
+### Production Build
 
 ```bash
 npm run build
 npm start
 ```
 
-## 📁 Estructura del Proyecto
+## 📁 Project Structure
 
-```
-dashboard-criptomonedas/
-├── app/                    # Páginas de Next.js
-│   ├── page.tsx           # Página principal del dashboard
-│   └── layout.tsx         # Layout principal
-├── components/            # Componentes React
-│   ├── dashboard/         # Componentes del dashboard
-│   ├── ui/               # Componentes UI reutilizables
-│   └── theme-provider.tsx # Proveedor de tema
-├── lib/                   # Utilidades y configuraciones
-├── public/               # Archivos estáticos
-├── styles/               # Estilos globales
-├── hooks/                # Custom hooks
-└── .next/               # Build de Next.js
+```text
+crypto-dashboard/
+├── app/                    # Next.js pages
+│   ├── page.tsx            # Main dashboard page
+│   └── layout.tsx          # Main layout
+├── components/             # React components
+│   ├── dashboard/          # Dashboard components
+│   ├── ui/                 # Reusable UI components
+│   └── theme-provider.tsx  # Theme provider
+├── lib/                    # Utilities and configurations
+├── public/                 # Static files
+├── styles/                 # Global styles
+├── hooks/                  # Custom hooks
+└── .next/                  # Next.js build
 ```
 
-## 🎨 Componentes Destacados
+## 🎨 Featured Components
 
 ### Sidebar Component
-- Navegación principal con múltiples vistas
-- Indicador de conexión de wallet
-- Diseño minimalista con efectos hover
+
+* Main navigation with multiple views
+* Wallet connection indicator
+* Minimalist design with hover effects
 
 ### Portfolio Chart
-- Gráficos de línea con gradientes
-- Múltiples períodos (1D, 1W, 1M, 3M, 1Y)
-- Tooltips interactivos con datos detallados
+
+* Line charts with gradients
+* Multiple time periods (1D, 1W, 1M, 3M, 1Y)
+* Interactive tooltips with detailed data
 
 ### Metric Cards
-- Tarjetas informativas con iconos
-- Indicadores de rendimiento
-- Animaciones de conteo
 
-## 🔧 Configuración
+* Informational cards with icons
+* Performance indicators
+* Counting animations
 
-### Variables de Entorno
-Crea un archivo `.env.local` para configurar variables de entorno:
+## 🔧 Configuration
+
+### Environment Variables
+
+Create a `.env.local` file to configure environment variables:
 
 ```env
 NEXT_PUBLIC_API_URL=your_api_url
 NEXT_PUBLIC_WALLET_CONNECT_PROJECT_ID=your_project_id
 ```
 
-### Personalización
-- Modifica los colores en `tailwind.config.js`
-- Ajusta las métricas en `app/page.tsx`
-- Personaliza componentes en `components/dashboard/`
+### Customization
 
-## 🤝 Contribución
+* Modify colors in `tailwind.config.js`
+* Adjust metrics in `app/page.tsx`
+* Customize components in `components/dashboard/`
 
-¡Las contribuciones son bienvenidas! Si quieres mejorar este proyecto:
+## 🤝 Contributing
 
-1. Fork el repositorio
-2. Crea una rama para tu feature (`git checkout -b feature/AmazingFeature`)
-3. Commit tus cambios (`git commit -m 'Add some AmazingFeature'`)
-4. Push a la rama (`git push origin feature/AmazingFeature`)
-5. Abre un Pull Request
+Contributions are welcome! If you want to improve this project:
 
-## 📝 Mejoras Futuras
+1. Fork the repository
+2. Create a branch for your feature (`git checkout -b feature/AmazingFeature`)
+3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
 
-- [ ] Conexión real con APIs de criptomonedas
-- [ ] Integración con wallets (MetaMask, WalletConnect)
-- [ ] Sistema de notificaciones push
-- [ ] Exportación de datos a CSV/Excel
-- [ ] Modo móvil optimizado
-- [ ] Multi-idioma
-- [ ] Backtesting de estrategias
+## 📝 Future Improvements
 
-## 🙋‍♂️ Sobre el Desarrollador
+* [ ] Real integration with cryptocurrency APIs
+* [ ] Wallet integration (MetaMask, WalletConnect)
+* [ ] Push notification system
+* [ ] Data export to CSV/Excel
+* [ ] Optimized mobile mode
+* [ ] Multilingual support
+* [ ] Strategy backtesting
 
-Este proyecto fue desarrollado por **Ronald Cubides** como parte del reto de aprendizaje de IA para programación de Platzi. Es un demostración de las capacidades de la IA para asistir en el desarrollo de aplicaciones web modernas.
+## 🙋‍♂️ About the Developer
 
-### ¿Cómo puedes ayudar?
+This project was developed by **Ronald Cubides** as part of Platzi's AI programming learning challenge. It demonstrates the capabilities of AI in assisting with the development of modern web applications.
 
-Me encantaría recibir feedback y sugerencias para mejorar este proyecto:
+### How Can You Help?
 
-- **Reportes de bugs**: Si encuentras algún error, por favor abre un issue
-- **Sugerencias de features**: Ideas para nuevas funcionalidades
-- **Mejoras de código**: Optimizaciones o mejores prácticas
-- **Diseño UI/UX**: Mejoras en la interfaz y experiencia de usuario
-- **Documentación**: Ayuda a mejorar la documentación del proyecto
+I would love to receive feedback and suggestions to improve this project:
 
-### Contacto
-
-Si quieres colaborar o tienes preguntas, no dudes en contactarme:
-
-- GitHub: [tu-perfil-github]
-- LinkedIn: [tu-perfil-linkedin]
-- Email: [tu-email]
-
-## 📄 Licencia
-
-Este proyecto está bajo la Licencia MIT. Mira el archivo [LICENSE](LICENSE) para más detalles.
+* **Bug Reports**: If you find an issue, please open an issue
+* **Feature Suggestions**: Ideas for new functionality
+* **Code Improvements**: Optimizations or best practices
+* **UI/UX Design**: Improvements to the interface and user experience
+* **Documentation**: Help improve the project documentation
 
 ---
 
-**⭐ Si este proyecto te gusta, no olvides darle una estrella en GitHub!**
+**⭐ If you like this project, don't forget to give it a star on GitHub!**
 
 ---
 
-*Desarrollado con ❤️ por Ronald Cubides*
+*Developed with ❤️ by Ronald Cubides*
